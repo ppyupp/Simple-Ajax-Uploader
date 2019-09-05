@@ -1062,6 +1062,7 @@ ss.SimpleUpload.prototype = {
             self._overBtn = elem;
             ss.copyLayout( elem, self._input.parentNode );
             self._input.parentNode.style.visibility = 'visible';
+            ss.addStyles( self._input, {'right' : '0.5px',}); // 引发重绘, 不然chrome(76.0.3809.132)这个版本没法点击
         });
 
         // Support keyboard interaction
