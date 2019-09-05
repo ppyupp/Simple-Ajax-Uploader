@@ -1984,7 +1984,7 @@ ss.extendObj( ss.SimpleUpload.prototype, {
 
         this._input = document.createElement( 'input' );
         this._input.type = 'file';
-        this._input.class = 'simple_ajax_uploader';
+        this._input.className = 'simple_ajax_uploader';
         this._input.name = this._opts.name;
 
         // Don't allow multiple file selection in Safari -- it has a nasty bug
